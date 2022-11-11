@@ -4,16 +4,17 @@
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <title>My login page</title>
+        <script src="login.js"></script>
     </head>
     <body>
         <div class="container"><h1>Login to continue</h1></div>
 
         <div class="wrapper">
             <header>Login Form</header>
-            <form action="success.html">
+            <form id="form_id" method="post" name="myform">
                 <div class="field username">
                     <div class="input-area">
-                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Username" name="username" id="username">
                         <i class="icon envelope"></i>
                         <i class="error error-icon"></i>
                     </div>
@@ -21,18 +22,16 @@
                 </div>
                 <div class="field password">
                     <div class="input-area">
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" name="password" id="password">
                         <i class="icon lock"></i>
                         <i class="error error-icon"></i>
                     </div>
                     <div class="error error-txt">Password can't be blank</div>
                 </div>
                 <div class="pass-txt"><a href="#">Forgot Password?</a></div>
-                <input type="submit" value="login">
+                <input type="submit" value="login" onclick="validate()">
             </form>
             <div class="sign-txt">Don't have an account? <a href="#">Signup now</a></div>
         </div>
-
-        <script src="login.js"></script>
     </body>
 </hmtl>
