@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class Activity 5</title>
+
+        
+    </head>
+    <body>
+        <h1>Class Activity 5</h1>
+
+        <form name="multiBy2">
+            Enter a variable : <input type="text" name="numVar">
+            <input type="button" value="submit" onclick="multiply()">
+            <br>
+            Answer : <input type="text" name="result">
+        </form>
+
+        <script>
+            function multiply()
+            {
+                var multiplyBy2;
+                var number = Number(document.multiBy2.numVar.value);
+                multiplyBy2=number+2;
+                document.multiBy2.result.value=multiplyBy2;
+            }
+        </script>
+    </body>
+</html>
